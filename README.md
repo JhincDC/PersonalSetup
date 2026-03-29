@@ -7,7 +7,7 @@ This is intended to work with a bunch of tools and applications pre-installed.
 ## Few Considerations
 - Script prepare and make ready for my personal configuration on my computers. Why not NixOS? NixOS works different and doesn't feels like linux when I try to make changes directly but not in a config file (.nix file).
 - Works with KDE Plasma, and tries to be *"boring"* in order to be a productive focused system.
-- Technically another Distro? Maybe, but works under Arch Linux base, and just prepare and install everything. Doesn't with so much changes.
+- Technically another Distro? Maybe, but works under Arch Linux base, and just prepare and install everything. This doesn't come with so much changes.
 - Some packages comes from AUR, through Chaotic-AUR repository, due missing time when is compiling.
 
 # Content
