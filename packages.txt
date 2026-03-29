@@ -1,0 +1,3 @@
+# Special versions that is apart.
+Blender 3.6.23 (Due OpenGL limitations [my computer has 3.3])
+Musescore 3.6.2 (Is faster than V.4., but just for sketching)
