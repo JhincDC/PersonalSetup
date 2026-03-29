@@ -40,9 +40,6 @@ sleep 2
 echo "Loading!"
 loadingFunction
 
-rootLogin
-
-
 clear
 echo "Remember to stay connected to internet in any moment!"
 sleep 2
