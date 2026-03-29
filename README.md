@@ -23,4 +23,4 @@ Here are a list of files:
 - arch-mac-style.zip : Plymouth style
 
 
-*Personal Use, but config as you would like to use :)*
+*Personal Use, but config it as you would like to use :)*
