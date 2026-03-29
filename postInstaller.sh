@@ -1,4 +1,5 @@
 #!/bin/bash
+cat personalSetup_part_* > personalSetup.knsv
 konsave -i personalSetup.knsv
 sleep 1
 konsave -a personalSetup
