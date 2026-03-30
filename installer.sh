@@ -305,10 +305,6 @@ EOF
 sudo chmod 644 "$POLICY_DIR/brave_policies.json"
 sudo chown root:root "$POLICY_DIR/brave_policies.json"
 
-unzip arch-mac-style.zip
-cp -r ./arch-mac-style /usr/share/plymouth/themes/
-plymouth-set-default-theme -R arch-mac-style
-
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo mkinitcpio -P
 
