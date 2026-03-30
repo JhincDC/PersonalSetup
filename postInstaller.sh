@@ -4,9 +4,6 @@ konsave -i personalSetup.knsv
 sleep 1
 konsave -a personalSetup
 
-sudo pacman -S --noconfirm --needed zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 sudo pacman -S --needed --noconfirm zram-generator
 
 sudo echo "[zram0]
@@ -24,3 +21,10 @@ sudo echo "/swapfile swap swap defaults 0 0" >> /etc/fstab
 git clone https://github.com/Bisanota/WineConfigs.git
 cd WineConfigs
 bash main.sh
+
+echo "Once you install ZSH and Oh My ZSH!, pls, put \"YES\" and type \"EXIT\""
+sudo pacman -S --noconfirm --needed zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+
