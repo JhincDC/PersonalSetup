@@ -20,12 +20,11 @@ reproductor="mpv"
 filesystem="ntfs-3g dosfstools btrfs-progs zip unzip p7zip unrar exfatprogs fuse2"
 extras="plymouth kdenlive musescore audacity gimp gimp-plugin-gmic inkscape digikam darktable blender krita krita-plugin-gmic libreoffice-fresh obs-studio yay natron tlp openutau lttng-ust2.12 dotnet-runtime-8.0 scribus qtractor ardour vscodium font-manager gpick imagemagick pdfarranger qpwgraph helvum colord colord-kde lsp-plugins calf fluidsynth ripgrep fd eza bat rust lldb gdb texlab clang git cmake ninja llvm bash-language-server python python-pip obsidian libdbusmenu-glib gvfs asciidoctor"
 guiServices="system-config-printer network-manager-applet simple-scan"
-dm_sddm="sddm"
-plasma="$dm_sddm plasma konsole dolphin ark kate okular gwenview kcalc filelight kdeconnect partitionmanager ksshaskpass konsave"
+plasma="sddm plasma konsole dolphin ark kate okular gwenview kcalc filelight kdeconnect partitionmanager ksshaskpass konsave"
 packages="$printer $chaoticAUR $scanner $optional"
 packages1="$fonts $audio $video $vulkan $codecs $reproductor"
 packages2="$filesystem $services $extras $guiServices"
-de="$dm_sddm $plasma"
+de="$plasma"
 
 
 # Functions
@@ -277,7 +276,7 @@ pacman -Sy --noconfirm --needed $de
 
 sed -i 's/^HOOKS=.*/HOOKS=(base systemd plymouth autodetect microcode modconf kms keyboard keymap sd-vconsole block filesystems fsck)/' /etc/mkinitcpio.conf
 loadingFunction
-systemctl enable $dm.service
+systemctl enable sddm.service
 systemctl enable cups
 systemctl enable bluetooth
 systemctl enable avahi-daemon.service
