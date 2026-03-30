@@ -47,7 +47,7 @@ addChaoticAUR() {
     sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
     echo -e "\n#Multilib\n[multilib]\nInclude = /etc/pacman.d/mirrorlist" >> /etc/pacman.conf
     echo -e "\n#Chaotic AUR\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
-    sudo sed -i '/#Misc options/a ILoveCandy' /etc/pacman.conf
+    sudo sed -i '/# Misc options/a ILoveCandy' /etc/pacman.conf
     sudo sed -i 's/^#Color/Color/' /etc/pacman.conf
 }
 
