@@ -23,8 +23,8 @@ cd WineConfigs
 bash main.sh
 
 unzip arch-mac-style.zip
-cp -r ./arch-mac-style /usr/share/plymouth/themes/
-plymouth-set-default-theme -R arch-mac-style
+sudo cp -r ./arch-mac-style /usr/share/plymouth/themes/
+sudo plymouth-set-default-theme -R arch-mac-style
 
 echo "Once you install ZSH and Oh My ZSH!, pls, put \"YES\" and type \"EXIT\""
 sudo pacman -S --noconfirm --needed zsh
