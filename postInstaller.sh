@@ -22,6 +22,10 @@ git clone https://github.com/Bisanota/WineConfigs.git
 cd WineConfigs
 bash main.sh
 
+unzip arch-mac-style.zip
+cp -r ./arch-mac-style /usr/share/plymouth/themes/
+plymouth-set-default-theme -R arch-mac-style
+
 echo "Once you install ZSH and Oh My ZSH!, pls, put \"YES\" and type \"EXIT\""
 sudo pacman -S --noconfirm --needed zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
