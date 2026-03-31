@@ -3,7 +3,6 @@ cat personalSetup_part_* > personalSetup.knsv
 konsave -i personalSetup.knsv
 sleep 1
 konsave -a personalSetup
-
 sudo pacman -S --needed --noconfirm zram-generator
 
 sudo echo "[zram0]
@@ -31,4 +30,6 @@ sudo pacman -S --noconfirm --needed zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
+echo "Finished"
 
+echo "To fix OBS with LSP plugins, use \"Exec=env QT_QPA_PLATFORM=xcb\" before OBS execution"
