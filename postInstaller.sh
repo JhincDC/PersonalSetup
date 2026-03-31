@@ -3,7 +3,6 @@ cat personalSetup_part_* > personalSetup.knsv
 konsave -i personalSetup.knsv
 sleep 1
 konsave -a personalSetup
-alias obs='QT_QPA_PLATFORM=xcb obs'
 
 sudo pacman -S --needed --noconfirm zram-generator
 
