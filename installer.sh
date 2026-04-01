@@ -281,6 +281,7 @@ systemctl enable sddm.service
 systemctl enable cups
 systemctl enable bluetooth
 systemctl enable avahi-daemon.service
+systemctl enable tlp.service
 
 printf "[Theme]\nCurrent=breeze\n" > /etc/sddm.conf
 set -e
